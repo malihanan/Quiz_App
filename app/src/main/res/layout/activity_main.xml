@@ -28,26 +28,53 @@
 
         <RadioGroup
             android:id="@+id/answer_radio_group"
-            style="@style/RadioGroupStyle">
+            style="@style/AnswerStyle">
 
             <RadioButton
-                android:id="@+id/option0"
+                android:id="@+id/option0_rb"
                 style="@style/RadioButtonStyle"
                 android:text="Option 1"
                 android:checked="false" />
 
             <RadioButton
-                android:id="@+id/option1"
+                android:id="@+id/option1_rb"
                 style="@style/RadioButtonStyle"
                 android:text="Option 2"
                 android:checked="false" />
 
             <RadioButton
-                android:id="@+id/option2"
+                android:id="@+id/option2_rb"
                 style="@style/RadioButtonStyle"
                 android:text="Option 3"
                 android:checked="false" />
         </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/answer_checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/option0_cb"
+                style="@style/AnswerStyle"
+                android:text="Option 1"
+                android:checked="false"/>
+            <CheckBox
+                android:id="@+id/option1_cb"
+                style="@style/AnswerStyle"
+                android:text="Option 1"
+                android:checked="false"/>
+            <CheckBox
+                android:id="@+id/option2_cb"
+                style="@style/AnswerStyle"
+                android:text="Option 1"
+                android:checked="false"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/answer_text"
+            style="@style/AnswerStyle"
+            android:hint="Answer here..." />
 
         <TextView
             android:id="@+id/error_text"
